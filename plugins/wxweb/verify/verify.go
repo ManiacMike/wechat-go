@@ -28,7 +28,7 @@ package verify // auto verify friend request
 import (
 	"fmt"
 	"github.com/songtianyi/rrframework/logs" // 导入日志包
-	"github.com/songtianyi/wechat-go/wxweb"  // 导入协议包
+	"github.com/ManiacMike/wechat-go/wxweb"  // 导入协议包
 )
 
 // Register plugin

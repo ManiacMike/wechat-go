@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/songtianyi/rrframework/logs"
-	"github.com/songtianyi/wechat-go/wxweb"
+	"github.com/ManiacMike/wechat-go/wxweb"
 	"net/http"
 	"os"
 	"path/filepath"

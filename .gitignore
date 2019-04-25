@@ -10,3 +10,4 @@ windows_bot
 example
 .gradle
 .DS_Store
+*.jpg

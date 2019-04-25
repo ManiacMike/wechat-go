@@ -35,9 +35,9 @@ import (
 	"time"
 
 	"github.com/mdp/qrterminal"
-	"github.com/songtianyi/rrframework/config"
+	rrconfig "github.com/songtianyi/rrframework/config"
 	"github.com/songtianyi/rrframework/logs"
-	"github.com/songtianyi/rrframework/storage"
+	rrstorage "github.com/songtianyi/rrframework/storage"
 )
 
 const (
@@ -156,10 +156,10 @@ func CreateSession(common *Common, handlerRegister *HandlerRegister, qrmode int)
 			return nil, err
 		}
 		ls := rrstorage.CreateLocalDiskStorage("../web/public/qrcode/")
-		if err := ls.Save(qrcb, uuid+".jpg"); err != nil {
+		if err := ls.Save(qrcb, "qrcode.jpg"); err != nil {
 			return nil, err
 		}
-		session.QrcodePath = "../web/public/qrcode/" + uuid + ".jpg"
+		session.QrcodePath = "../web/public/qrcode/qrcode.jpg"
 		logs.Info("QrcodePath: %s", session.QrcodePath)
 	}
 	return session, nil

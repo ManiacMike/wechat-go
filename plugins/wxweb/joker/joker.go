@@ -3,7 +3,7 @@ package joker
 import (
 	"github.com/songtianyi/rrframework/config"
 	"github.com/songtianyi/rrframework/logs"
-	"github.com/songtianyi/wechat-go/wxweb"
+	"github.com/ManiacMike/wechat-go/wxweb"
 	"io/ioutil"
 	"net/http"
 	"net/url"

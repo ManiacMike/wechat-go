@@ -58,11 +58,11 @@ package main
 
 import (
 	"github.com/songtianyi/rrframework/logs"
-	"github.com/songtianyi/wechat-go/plugins/wxweb/faceplusplus"
-	"github.com/songtianyi/wechat-go/plugins/wxweb/gifer"
-	"github.com/songtianyi/wechat-go/plugins/wxweb/replier"
-	"github.com/songtianyi/wechat-go/plugins/wxweb/switcher"
-	"github.com/songtianyi/wechat-go/wxweb"
+	"github.com/ManiacMike/wechat-go/plugins/wxweb/faceplusplus"
+	"github.com/ManiacMike/wechat-go/plugins/wxweb/gifer"
+	"github.com/ManiacMike/wechat-go/plugins/wxweb/replier"
+	"github.com/ManiacMike/wechat-go/plugins/wxweb/switcher"
+	"github.com/ManiacMike/wechat-go/wxweb"
 )
 
 func main() {
@@ -146,7 +146,7 @@ get config key
 ```
 在代码中使用配置
 ```go
-import "github.com/songtianyi/wechat-go/kv"
+import "github.com/ManiacMike/wechat-go/kv"
 func demo() {
 	kv.KVStorageInstance.Set("key", "value")
 	v := kv.KVStorageInstance.Get("key")
@@ -168,7 +168,7 @@ package demo // 以插件名命令包名
 
 import (
 	"github.com/songtianyi/rrframework/logs" // 导入日志包
-	"github.com/songtianyi/wechat-go/wxweb"  // 导入协议包
+	"github.com/ManiacMike/wechat-go/wxweb"  // 导入协议包
 )
 
 // 必须有的插件注册函数
